@@ -1,0 +1,138 @@
+/* Custom drink page styles */
+.customizer {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+.price-display {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.price-display p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.custom-section {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.option-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.option-card:hover {
+    border-color: var(--primary-color);
+}
+
+.option-card.selected {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+
+.option-card input {
+    margin-right: 5px;
+}
+
+.slider-container {
+    margin: 20px 0;
+}
+
+.slider-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 4px;
+    background: #ddd;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    cursor: pointer;
+}
+
+.checkbox-container, .radio-group {
+    margin: 15px 0;
+}
+
+.checkbox-container input, .radio-group input {
+    margin-right: 10px;
+}
+
+.radio-group label {
+    margin-right: 15px;
+}
+
+.size-selection {
+    margin: 20px 0;
+}
+
+.quantity-selection {
+    margin: 20px 0;
+}
+
+.quantity-selection input {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.flavor-hint {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #fff8e1;
+    border-left: 4px solid var(--warning-color);
+}
+
+.flavor-hint.warning {
+    background-color: #ffebee;
+    border-left-color: #f44336;
+}
+
+.flavor-hint.suggestion {
+    background-color: #e8f5e9;
+    border-left-color: #4caf50;
+}

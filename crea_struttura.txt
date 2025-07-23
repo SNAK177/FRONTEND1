@@ -1,0 +1,43 @@
+bubble-tea-frontend/
+├── index.html
+├── menu.html                   # Menu con 6 prodotti preconfigurati
+├── custom.html                 # Pagina per creare la propria bevanda
+├── dolci.html                  # Pagina dolci della casa
+├── carrello.html               # Visualizzazione ordine/carrello
+├── admin/
+│   ├── login.html              # Login gestore
+│   ├── dashboard.html          # Visualizzazione ordini con stato
+│   ├── prodotti.html           # Gestione prodotti preconfigurati
+│   └── statistiche.html        # Visualizzazione statistiche(?)
+├── css/
+│   ├── styles.css
+│   ├── home.css
+│   ├── animations.css
+|   ├── menu.css
+|   ├── custom.css
+|   ├── carrello.css
+|   ├── admin.css
+├── js/
+│   ├── lib/
+│   │   └── jsQR.js
+│   ├── modules/
+│   │   ├── bubbles-animation.js
+│   │   └── qr-scanner.js
+│   └── main.js
+├── assets/
+│   ├── bubbles/
+│   │   ├── bubble1.svg
+│   │   ├── bubble2.svg
+│   │   └── bubble3.svg
+│   ├── icons/
+│   │   ├── bubble-tea.svg
+│   │   ├── instagram.svg(facoltativo)
+│   │   ├── facebook.svg(facoltativo)
+│   │   └── tiktok.svg(facoltativo)
+│   └── products/
+│       ├── drink1.jpg
+│       ├── drink2.jpg
+│       ├── drink3.jpg
+│       ├── drink4.jpg
+│       └── drink5.jpg
+└── menu.html

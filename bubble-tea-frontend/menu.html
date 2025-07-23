@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Bubble Tea Zen</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+      <a href="menu.html"><i class="fas fa-list"></i> Menu</a>
+      <a href="custom.html"><i class="fas fa-magic"></i> Crea</a>
+      <a href="dolci.html"><i class="fas fa-cookie"></i> Dolci</a>
+      <a href="carrello.html"><i class="fas fa-shopping-cart"></i> Carrello</a>
+    </nav>
+    <button class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="container">
+      <header>
+        <h1>Menu Bubble Tea</h1>
+        <p>Tavolo: <span id="table-number">-</span></p>
+      </header>
+
+      <nav class="menu-tabs">
+        <button class="active" data-tab="preconfigurati">Preconfigurati</button>
+        <button data-tab="custom">Crea il tuo</button>
+        <button data-tab="dolci">Dolci</button>
+      </nav>
+
+      <main id="preconfigurati" class="tab-content active">
+        <div class="products-grid">
+          <!-- Product cards will be inserted here by JS -->
+        </div>
+      </main>
+
+      <div id="custom" class="tab-content">
+        <p>Vuoi creare la tua bevanda personalizzata?</p>
+        <a href="custom.html" class="btn">Crea Bevanda Custom</a>
+      </div>
+
+      <div id="dolci" class="tab-content">
+        <p>Vuoi vedere i nostri dolci?</p>
+        <a href="dolci.html" class="btn">Vedi Dolci</a>
+      </div>
+
+      <div class="cart-preview">
+        <span id="cart-count">0</span>
+        <a href="carrello.html" class="btn">Vedi Carrello</a>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

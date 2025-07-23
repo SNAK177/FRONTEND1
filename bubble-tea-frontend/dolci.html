@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolci - Bubble Tea Zen</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <a href="index.html" class="back-button">
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <h1>Dolci della Casa</h1>
+            <a href="carrello.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </a>
+        </header>
+
+        <main class="desserts-grid">
+            <div class="dessert-card">
+                <div class="dessert-image" style="background-image: url('assets/products/dessert1.jpg')"></div>
+                <div class="dessert-info">
+                    <h3>Cheesecake al Matcha</h3>
+                    <p>Delicata cheesecake con topping al tè matcha</p>
+                    <div class="dessert-price">€4.50</div>
+                    <button class="btn add-to-cart">Aggiungi</button>
+                </div>
+            </div>
+
+            <div class="dessert-card">
+                <div class="dessert-image" style="background-image: url('assets/products/dessert2.jpg')"></div>
+                <div class="dessert-info">
+                    <h3>Mochi al Cioccolato</h3>
+                    <p>Morbidi mochi ripieni di cioccolato fondente</p>
+                    <div class="dessert-price">€3.80</div>
+                    <button class="btn add-to-cart">Aggiungi</button>
+                </div>
+            </div>
+
+            <!-- Add more dessert cards as needed -->
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/dolci.js"></script>
+</body>
+</html>

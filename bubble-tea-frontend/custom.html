@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crea il tuo Bubble Tea</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+  <body>
+    <nav class="main-nav">
+      <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
+      <a href="menu.html"><i class="fas fa-list"></i> Menu</a>
+      <a href="custom.html"><i class="fas fa-magic"></i> Crea</a>
+      <a href="dolci.html"><i class="fas fa-cookie"></i> Dolci</a>
+      <a href="carrello.html"><i class="fas fa-shopping-cart"></i> Carrello</a>
+    </nav>
+    <button class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="container">
+      <header>
+        <h1>Crea il tuo Bubble Tea</h1>
+        <p>Tavolo: <span id="table-number">-</span></p>
+      </header>
+
+      <div class="customizer">
+        <div class="price-display">
+          <p>Prezzo M: <span id="price-m">€4.50</span></p>
+          <p>Prezzo L: <span id="price-l">€5.50</span></p>
+        </div>
+
+        <div class="custom-section">
+          <h2>Base</h2>
+          <div class="options-grid" id="base-options">
+            <!-- Base options will be inserted here by JS -->
+          </div>
+        </div>
+
+        <div class="custom-section">
+          <h2>Bubble</h2>
+          <div class="options-grid" id="bubble-options">
+            <!-- Bubble options will be inserted here by JS -->
+          </div>
+        </div>
+
+        <div class="custom-section">
+          <h2>Aroma</h2>
+          <div class="options-grid" id="aroma-options">
+            <!-- Aroma options will be inserted here by JS -->
+          </div>
+        </div>
+
+        <div class="custom-section">
+          <h2>Personalizzazione</h2>
+          <div class="slider-container">
+            <label for="sweetness"
+              >Dolcezza: <span id="sweetness-value">50%</span></label
+            >
+            <input
+              type="range"
+              id="sweetness"
+              min="0"
+              max="100"
+              step="10"
+              value="50"
+            />
+          </div>
+
+          <div class="checkbox-container">
+            <input type="checkbox" id="ice" name="ice" />
+            <label for="ice">Aggiungi ghiaccio</label>
+          </div>
+        </div>
+
+        <div class="size-selection">
+          <h2>Dimensione</h2>
+          <div class="radio-group">
+            <input type="radio" id="size-m" name="size" value="M" />
+            <label for="size-m">Medio (M)</label>
+
+            <input type="radio" id="size-l" name="size" value="L" checked />
+            <label for="size-l">Large (L)</label>
+          </div>
+        </div>
+
+        <div class="quantity-selection">
+          <label for="quantity">Quantità:</label>
+          <input type="number" id="quantity" min="1" value="1" />
+        </div>
+
+        <button id="add-to-cart" class="btn">Aggiungi al Carrello</button>
+
+        <div id="flavor-hint" class="flavor-hint">
+          <!-- Flavor suggestions will appear here -->
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>

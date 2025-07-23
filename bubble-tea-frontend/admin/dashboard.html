@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Bubble Tea Zen Admin</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="admin-wrapper">
+        <!-- Sidebar -->
+        <aside class="admin-sidebar">
+            <div class="sidebar-header">
+                <img src="../assets/icons/bubble-tea.svg" alt="Logo">
+                <h3>BubbleBliss</h3>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                <a href="prodotti.html"><i class="fas fa-list"></i> Prodotti</a>
+                <a href="statistiche.html"><i class="fas fa-chart-bar"></i> Statistiche</a>
+                <a href="#"><i class="fas fa-cog"></i> Impostazioni</a>
+                <a href="#" id="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="admin-content">
+            <header class="content-header">
+                <h1>Dashboard</h1>
+                <div class="header-actions">
+                    <div class="notification-bell">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-count">3</span>
+                    </div>
+                    <div class="admin-profile">
+                        <img src="../assets/admin-profile.jpg" alt="Admin Profile">
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Dashboard Widgets -->
+            <div class="dashboard-widgets">
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>Ordini</h3>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="widget-body">
+                        <span class="widget-value">42</span>
+                        <span class="widget-change positive">+12%</span>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>#</h3>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="widget-body">
+                        <span class="widget-value">15</span>
+                        <span class="widget-change negative">-3</span>
+                    </div>
+                </div>
+                <div class="widget">
+                    <div class="widget-header">
+                        <h3>#</h3>
+                        <i class="fas fa-euro-sign"></i>
+                    </div>
+                    <div class="widget-body">
+                        <span class="widget-value">€286.50</span>
+                        <span class="widget-change positive">+8%</span>
+                    </div>
+                </div>
+                
+                <div class="widget warning">
+                    <div class="widget-header">
+                        <h3>Ordini in Attesa</h3>
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="widget-body">
+                        <span class="widget-value">5</span>
+                        <span class="widget-change negative">+2</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recent Orders -->
+            <div class="orders-table">
+                <div class="table-header">
+                    <h2>Ordini Recenti</h2>
+                    <a href="#" class="btn btn-admin">Vedi Tutti</a>
+                </div>
+                
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID Ordine</th>
+                            <th>Tavolo</th>
+                            <th>Prodotti</th>
+                            <th>Totale</th>
+                            <th>Stato</th>
+                            <th>Azioni</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#125</td>
+                            <td>12</td>
+                            <td>2 bevande, 1 dolce</td>
+                            <td>€13.80</td>
+                            <td><span class="status preparing">In Preparazione</span></td>
+                            <td>
+                                <button class="btn-action"><i class="fas fa-eye"></i></button>
+                                <button class="btn-action"><i class="fas fa-check"></i></button>
+                            </td>
+                        </tr>
+                        <!-- More rows -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="../js/admin/dashboard.js"></script>
+</body>
+</html>
