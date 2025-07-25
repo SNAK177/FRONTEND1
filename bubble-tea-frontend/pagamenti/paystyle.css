@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(to right, #f0f2f5, #e2e8f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.payment-box {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.payment-box:hover {
+  transform: translateY(-5px);
+}
+
+.payment-box h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #2d3748;
+}
+
+.payment-box p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+}
+
+.pay-btn {
+  background-color: #635bff;
+  color: #fff;
+  border: none;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.2s ease;
+}
+
+.pay-btn:hover {
+  background-color: #5548f0;
+  box-shadow: 0 4px 12px rgba(99, 91, 255, 0.3);
+}
+.dcl-btn{
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.2s ease;
+}
+.dcl-btn:hover{
+  background-color: darkred;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+}
+@media (max-width: 480px) {
+  .payment-box {
+    padding: 2rem 1.5rem;
+  }
+}

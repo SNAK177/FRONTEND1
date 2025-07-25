@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carrello - Bubble Tea Zen</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/carrello.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/carrello.css" />
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <h1>Il tuo Carrello</h1>
-            <p>Tavolo: <span id="table-number">-</span></p>
-        </header>
-        
-        <main>
-            <div id="cart-items" class="cart-items">
-                <!-- Cart items will be inserted here by JS -->
-            </div>
-            
-            <div class="cart-summary">
-                <h3>Riepilogo Ordine</h3>
-                <div class="summary-row">
-                    <span>Totale parziale:</span>
-                    <span id="subtotal">€0.00</span>
-                </div>
-                <div class="summary-row">
-                    <span>Totale:</span>
-                    <span id="total">€0.00</span>
-                </div>
-                
-                <button id="confirm-order" class="btn">Conferma Ordine</button>
-                <a href="menu.html" class="btn secondary">Torna al Menu</a>
-            </div>
-        </main>
+      <header>
+        <h1>Il tuo Carrello</h1>
+        <p>Tavolo: <span id="table-number">-</span></p>
+      </header>
+
+      <main>
+        <div id="cart-items" class="cart-items">
+          <!-- Cart items will be inserted here by JS -->
+        </div>
+
+        <div class="cart-summary">
+          <h3>Riepilogo Ordine</h3>
+          <div class="summary-row">
+            <span>Totale parziale:</span>
+            <span id="subtotal">€0.00</span>
+          </div>
+          <div class="summary-row">
+            <span>Totale:</span>
+            <span id="total">€0.00</span>
+          </div>
+
+          <button id="confirm-order" class="btn">Conferma Ordine</button>
+          <a href="menu.html" class="btn secondary">Torna al Menu</a>
+        </div>
+      </main>
     </div>
 
     <script src="js/main.js"></script>
     <script src="js/carrello.js"></script>
-</body>
+    <script>
+    document.getElementById("confirm-order").addEventListener("click", function () {
+        window.location.href = "./pagamenti/payments.html";
+        });
+    </script>
+  </body>
 </html>
