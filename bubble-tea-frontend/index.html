@@ -1,175 +1,201 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bubble Tea Zen</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <link rel="stylesheet" href="styles/animations.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <style>
-        /* QR Code section styling */
-        .qr-section {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            max-width: 500px;
-            margin: 40px auto;
-            text-align: center;
-        }
-        
-        .qr-code {
-            width: 200px;
-            height: 200px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 15px;
-            border: 1px solid #eee;
-        }
-        
-        .qr-code img {
-            width: 100%;
-            height: 100%;
-        }
-        
-        .table-number {
-            font-size: 1.2rem;
-            margin: 15px 0;
-            font-weight: bold;
-            color: var(--primary-color);
-        }
+      /* QR Code section styling */
+      .qr-section {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        margin: 40px auto;
+        text-align: center;
+      }
+
+      .qr-code {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 15px;
+        border: 1px solid #eee;
+      }
+
+      .qr-code img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .table-number {
+        font-size: 1.2rem;
+        margin: 15px 0;
+        font-weight: bold;
+        color: var(--primary-color);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Animated bubble background -->
     <div class="bubble-background">
-        <div class="bubble bubble-1"></div>
-        <div class="bubble bubble-2"></div>
-        <div class="bubble bubble-3"></div>
-        <div class="bubble bubble-4"></div>
-        <div class="bubble bubble-5"></div>
+      <div class="bubble bubble-1"></div>
+      <div class="bubble bubble-2"></div>
+      <div class="bubble bubble-3"></div>
+      <div class="bubble bubble-4"></div>
+      <div class="bubble bubble-5"></div>
     </div>
 
     <div class="container">
-        <!-- Header with logo and nav -->
-        <header class="main-header">
-            <div class="logo">
-                <img src="assets/icons/bubble-tea.svg" alt="Bubble Bliss Logo">
-                <h1>Bubble<span>Zen</span></h1>
-            </div>
-            <nav class="main-nav">
-                <a href="index.html" class="active"><i class="fas fa-home"></i> Home</a>
-                <a href="menu.html"><i class="fas fa-list"></i> Menu</a>
-                <a href="custom.html"><i class="fas fa-magic"></i> Crea</a>
-                <a href="dolci.html"><i class="fas fa-cookie"></i> Dolci</a>
-                <a href="carrello.html"><i class="fas fa-shopping-cart"></i> Carrello</a>
-            </nav>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        </header>
+      <!-- Header with logo and nav -->
+      <header class="main-header">
+        <div class="logo">
+          <img src="assets/icons/bubble-tea.svg" alt="Bubble Bliss Logo" />
+          <h1>Bubble<span>Zen</span></h1>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html" class="active"
+            ><i class="fas fa-home"></i> Home</a
+          >
+          <a href="menu.html"><i class="fas fa-list"></i> Menu</a>
+          <a href="custom.html"><i class="fas fa-magic"></i> Crea</a>
+          <a href="dolci.html"><i class="fas fa-cookie"></i> Dolci</a>
+          <a href="carrello.html"
+            ><i class="fas fa-shopping-cart"></i> Carrello</a
+          >
+        </nav>
+        <button class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </header>
 
-        <!-- Hero section -->
-        <section class="hero">
-            <div class="hero-content fade-in">
-                <h2>Scopri il vero gusto del Bubble Tea</h2>
-                <p>Personalizza la tua bevanda perfetta o scegli tra le nostre creazioni signature</p>
-                
-                <div class="cta-buttons">
-                    <a href="menu.html" class="btn btn-primary pulse">
-                        <i class="fas fa-list"></i> Vedi il Menu
-                    </a>
-                    <a href="custom.html" class="btn btn-secondary">
-                        <i class="fas fa-magic"></i> Crea il tuo
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image slide-in-right">
-                <img src="assets/products/hero-drink.png" alt="Bubble Tea">
-            </div>
-        </section>
+      <!-- Hero section -->
+      <section class="hero">
+        <div class="hero-content fade-in">
+          <h2>Scopri il vero gusto del Bubble Tea</h2>
+          <p>
+            Personalizza la tua bevanda perfetta o scegli tra le nostre
+            creazioni signature
+          </p>
 
-        <!-- QR Code section -->
-        <section class="qr-section">
-            <h3>Ordina dal tuo tavolo</h3>
-            <p>Scansiona il QR code del tuo tavolo per accedere al menu digitale</p>
-            
-            <div class="qr-code">
-                <!-- Replace with your actual QR code image -->
-                <img src="assets/qr-sample.png" alt="QR Code">
-            </div>
-            
-            <div class="table-number">Tavolo #12</div>
-            
-            <p>Oppure accedi direttamente al nostro menu:</p>
-            <a href="menu.html" class="btn btn-primary">
-                <i class="fas fa-utensils"></i> Vedi Menu Completo
+          <div class="cta-buttons">
+            <a href="menu.html" class="btn btn-primary pulse">
+              <i class="fas fa-list"></i> Vedi il Menu
             </a>
-        </section>
+            <a href="custom.html" class="btn btn-secondary">
+              <i class="fas fa-magic"></i> Crea il tuo
+            </a>
+          </div>
+        </div>
+        <div class="hero-image slide-in-right">
+          <img src="assets/products/hero-drink.png" alt="Bubble Tea" />
+        </div>
+      </section>
 
-        <!-- Features section -->
-        <section class="features">
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
-                <h4>100% Personalizzabile</h4>
-                <p>Crea la tua bevanda perfetta scegliendo tra centinaia di combinazioni</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-bolt"></i>
-                </div>
-                <h4>Servizio Rapido</h4>
-                <p>Ordina dal tuo tavolo e ricevi la tua bevanda in pochi minuti</p>
-            </div>
-            
-            <div class="feature-card">
-                <div class="feature-icon">
-                    <i class="fas fa-heart"></i>
-                </div>
-                <h4>Ingredienti Freschi</h4>
-                <p>Utilizziamo solo ingredienti di alta qualità e freschi ogni giorno</p>
-            </div>
-        </section>
+      <!-- QR Code section -->
+      <section class="qr-section">
+        <h3>Ordina dal tuo tavolo</h3>
+        <p>Scansiona il QR code del tuo tavolo per accedere al menu digitale</p>
 
-        <!-- Footer -->
-        <footer class="main-footer">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>BubbleZen</h4>
-                    <p>Il tuo negozio di bubble tea preferito con oltre 50 combinazioni uniche</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Orari</h4>
-                    <p>Lun-Ven: 10:00 - 22:00</p>
-                    <p>Sab-Dom: 11:00 - 23:00</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h4>Contatti</h4>
-                    <p><i class="fas fa-phone"></i> 0123 456789</p>
-                    <p><i class="fas fa-envelope"></i> info@bubblebliss.it</p>
-                </div>
-            </div>
-            
-            <div class="social-links">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-tiktok"></i></a>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 BubbleBliss. Tutti i diritti riservati.</p>
-            </div>
-        </footer>
+        <div class="qr-code">
+          <!-- Replace with your actual QR code image -->
+          <img src="assets/qr-sample.png" alt="QR Code" />
+          <script src="js/modules/qr-scanner.js">
+            (function(){
+              if (!window.jsQR) {
+                window.jsQR = null;
+                console.warn('Placeholder jsQR attivo: sostituisci js/lib/jsQR.js con la libreria ufficiale (o aggiungi CDN).');
+              }
+            })();
+          </script>
+        </div>
+
+        <div class="table-number">Tavolo #12</div>
+
+        <p>Oppure accedi direttamente al nostro menu:</p>
+        <a href="menu.html" class="btn btn-primary">
+          <i class="fas fa-utensils"></i> Vedi Menu Completo
+        </a>
+      </section>
+
+      <!-- Features section -->
+      <section class="features">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <h4>100% Personalizzabile</h4>
+          <p>
+            Crea la tua bevanda perfetta scegliendo tra centinaia di
+            combinazioni
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <h4>Servizio Rapido</h4>
+          <p>Ordina dal tuo tavolo e ricevi la tua bevanda in pochi minuti</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-heart"></i>
+          </div>
+          <h4>Ingredienti Freschi</h4>
+          <p>
+            Utilizziamo solo ingredienti di alta qualità e freschi ogni giorno
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="main-footer">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>BubbleZen</h4>
+            <p>
+              Il tuo negozio di bubble tea preferito con oltre 50 combinazioni
+              uniche
+            </p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Orari</h4>
+            <p>Lun-Ven: 10:00 - 22:00</p>
+            <p>Sab-Dom: 11:00 - 23:00</p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Contatti</h4>
+            <p><i class="fas fa-phone"></i> 0123 456789</p>
+            <p><i class="fas fa-envelope"></i> info@bubblebliss.it</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2023 BubbleBliss. Tutti i diritti riservati.</p>
+        </div>
+      </footer>
     </div>
 
     <script src="js/main.js"></script>
     <script src="js/modules/bubbles-animation.js"></script>
-</body>
+  </body>
 </html>

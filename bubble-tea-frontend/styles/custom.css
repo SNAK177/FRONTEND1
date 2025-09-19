@@ -1,4 +1,26 @@
 /* Custom drink page styles */
+.main-nav {
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: var(--dark-color);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.main-nav a:hover, .main-nav a.active {
+    color: var(--primary-color);
+}
+
 .customizer {
     max-width: 800px;
     margin: 0 auto;

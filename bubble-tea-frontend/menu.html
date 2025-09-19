@@ -6,6 +6,93 @@
     <title>Menu - Bubble Tea Zen</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/menu.css" />
+    <!-- FontAwesome per le icone -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="main-nav">
+      <a href="index.html"><i class="fas fa-home"></i> Home</a>
+      <a href="menu.html" class="active"><i class="fas fa-list"></i> Menu</a>
+      <a href="custom.html"><i class="fas fa-magic"></i> Crea</a>
+      <a href="dolci.html"><i class="fas fa-cookie"></i> Dolci</a>
+      <a href="carrello.html"><i class="fas fa-shopping-cart"></i> Carrello</a>
+    </nav>
+
+    <!-- Toggle menu per mobile -->
+    <button class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Contenuto -->
+    <div class="container">
+      <header class="menu-header">
+        <h1>🍹 Menu Bubble Tea</h1>
+        <p>Tavolo: <span id="table-number">-</span></p>
+      </header>
+
+      <!-- Tabs -->
+      <nav class="menu-tabs">
+        <button class="active" data-tab="preconfigurati">
+          <i class="fas fa-mug-hot"></i> Preconfigurati
+        </button>
+        <button data-tab="custom">
+          <i class="fas fa-wand-magic-sparkles"></i> Crea il tuo
+        </button>
+        <button data-tab="dolci">
+          <i class="fas fa-ice-cream"></i> Dolci
+        </button>
+      </nav>
+
+      <!-- Tab contenuti -->
+      <main id="preconfigurati" class="tab-content active">
+        <div class="products-grid">
+          <!-- Product cards riempite da JS -->
+        </div>
+      </main>
+
+      <div id="custom" class="tab-content">
+        <p>Vuoi creare la tua bevanda personalizzata?</p>
+        <a href="custom.html" class="btn">✨ Crea Bevanda Custom</a>
+      </div>
+
+      <div id="dolci" class="tab-content">
+        <p>Vuoi vedere i nostri dolci?</p>
+        <a href="dolci.html" class="btn">🍩 Vedi Dolci</a>
+      </div>
+    </div>
+
+    <!-- Carrello floating -->
+    <div class="cart-preview">
+      <span id="cart-count">0</span>
+      <a href="carrello.html" class="btn"><i class="fas fa-shopping-cart"></i></a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Bubble Tea Zen. Tutti i diritti riservati.</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Bubble Tea Zen</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/menu.css" />
     <link rel="stylesheet" href="styles/home.css" />
   </head>
   <body>
@@ -22,7 +109,7 @@
     <div class="container">
       <header>
         <h1>Menu Bubble Tea</h1>
-        <p>Tavolo: <span id="table-number">-</span></p>
+        <p>Tavolo: <span id="table-number">1</span></p>
       </header>
 
       <nav class="menu-tabs">
@@ -34,7 +121,7 @@
       <main id="preconfigurati" class="tab-content active">
         <div class="products-grid">
           <!-- Product cards will be inserted here by JS -->
-        </div>
+        <!--</div>
       </main>
 
       <div id="custom" class="tab-content">
@@ -58,4 +145,4 @@
     <script src="js/main.js"></script>
     <script src="js/menu.js"></script>
   </body>
-</html>
+</html>-->
