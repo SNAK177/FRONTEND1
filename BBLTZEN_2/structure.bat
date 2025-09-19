@@ -1,7 +1,7 @@
 @echo off
 REM Crea la cartella principale
-mkdir bubble-tea-frontend
-cd bubble-tea-frontend
+mkdir bblzen2
+cd bblzen2
 
 REM File HTML principali
 echo.> index.html

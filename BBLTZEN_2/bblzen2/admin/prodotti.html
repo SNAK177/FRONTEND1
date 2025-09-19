@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Prodotti</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body class="admin-layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="sidebar-logo">Bubble Zen</h2>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="prodotti.html" class="active">Prodotti</a>
+      <a href="statistiche.html">Statistiche</a>
+    </nav>
+  </aside>
+
+  <!-- Contenuto -->
+  <main class="admin-content">
+    <h1 class="title">Gestione Prodotti</h1>
+
+    <button class="btn-primary">➕ Aggiungi Prodotto</button>
+
+    <table class="product-table">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Prezzo</th>
+          <th>Disponibile</th>
+          <th>Azioni</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bubble Tea Matcha</td>
+          <td>€4.50</td>
+          <td>✅</td>
+          <td>
+            <button class="btn-secondary">Modifica</button>
+            <button class="remove-btn">Elimina</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Cheesecake</td>
+          <td>€3.00</td>
+          <td>✅</td>
+          <td>
+            <button class="btn-secondary">Modifica</button>
+            <button class="remove-btn">Elimina</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+</body>
+</html>
 

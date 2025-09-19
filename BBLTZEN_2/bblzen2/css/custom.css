@@ -1,1 +1,25 @@
+.custom-container {
+  max-width: 500px;
+  margin: auto;
+  background: rgba(255,255,255,0.9);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
 
+.custom-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.custom-form select {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  border-radius: var(--radius);
+  border: 1px solid #ccc;
+}

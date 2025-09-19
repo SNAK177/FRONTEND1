@@ -1,1 +1,48 @@
+/* Hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 1rem;
+  animation: fadeIn 1s ease-in-out;
+}
 
+.hero h1 {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: var(--spacing);
+}
+
+.hero p {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin-bottom: var(--spacing);
+}
+
+/* QR section */
+.qr-section {
+  background: rgba(255,255,255,0.85);
+  padding: 2rem;
+  border-radius: var(--radius);
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.qr-icon {
+  width: 100px;
+  margin-top: 1rem;
+  animation: bounce 3s infinite;
+}
+
+/* Animazioni */
+@keyframes fadeIn {
+  from {opacity:0; transform: translateY(20px);}
+  to {opacity:1; transform: translateY(0);}
+}
+
+@keyframes bounce {
+  0%,100%{transform: translateY(0);}
+  50%{transform: translateY(-10px);}
+}
