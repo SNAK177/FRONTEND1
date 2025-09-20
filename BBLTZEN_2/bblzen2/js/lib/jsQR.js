@@ -7,7 +7,7 @@
 function jsQR(imageData, width, height) {
   // Simulazione: se trova qualcosa "decodifica" sempre un QR demo
   return {
-    data: "https://bubblezen.menu/demo",
+    data: "http://127.0.0.1:3000/BBLTZEN_2/bblzen2/index.html",
     location: {
       topLeftCorner: { x: 0, y: 0 },
       topRightCorner: { x: width, y: 0 },
