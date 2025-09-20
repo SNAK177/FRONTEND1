@@ -53,3 +53,10 @@ button:hover {
   background: var(--secondary);
   transform: scale(1.05);
 }
+footer {
+  text-align: center;
+  padding: var(--spacing);
+  background: var(--bg-dark);
+  color: var(--text-light);
+  margin-top: 2rem;
+}
