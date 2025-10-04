@@ -9,7 +9,7 @@
   --text-light: #fff;
   --radius: 1rem;
   --spacing: 1rem;
-  --shadow: 0 8px 20px rgba(0,0,0,0.1);
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* Reset globale */
@@ -18,9 +18,13 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html, body{
+  height: 100%;
+}
 body {
-  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
   background: linear-gradient(135deg, #f9f9f9 0%, #e0e0f8 100%);
   color: var(--text-dark);
   line-height: 1.6;
@@ -32,9 +36,23 @@ body {
   margin: auto;
   padding: var(--spacing);
 }
-
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+.navbar a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+}
 /* Link e pulsanti */
-a, button {
+a,
+button {
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
