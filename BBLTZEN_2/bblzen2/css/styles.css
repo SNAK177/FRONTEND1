@@ -1,0 +1,80 @@
+/* Variabili di tema */
+:root {
+  --primary: #d63384;
+  --secondary: #f06292;
+  --accent: #6c63ff;
+  --bg-light: #f9f9f9;
+  --bg-dark: #1f1f1f;
+  --text-dark: #222;
+  --text-light: #fff;
+  --radius: 1rem;
+  --spacing: 1rem;
+  --shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Reset globale */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body{
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #f9f9f9 0%, #e0e0f8 100%);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+/* Layout generico */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: var(--spacing);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing);
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+.navbar a {
+  color: var(--text-light);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+}
+/* Link e pulsanti */
+a,
+button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  background: var(--primary);
+  color: var(--text-light);
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+}
+
+button:hover {
+  background: var(--secondary);
+  transform: scale(1.05);
+}
+footer {
+  text-align: center;
+  padding: var(--spacing);
+  background: var(--bg-dark);
+  color: var(--text-light);
+  margin-top: 2rem;
+}

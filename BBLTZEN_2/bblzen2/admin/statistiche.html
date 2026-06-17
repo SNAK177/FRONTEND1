@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Statistiche</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/admin.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="../js/admin-charts.js" defer></script>
+</head>
+<body class="admin-layout">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="sidebar-logo">Bubble Zen</h2>
+    <nav>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="prodotti.html">Prodotti</a>
+      <a href="statistiche.html" class="active">Statistiche</a>
+    </nav>
+  </aside>
+
+  <!-- Contenuto -->
+  <main class="admin-content">
+    <h1 class="title">Statistiche Vendite 📊</h1>
+    <canvas id="salesChart" width="400" height="200"></canvas>
+  </main>
+
+</body>
+</html>
+

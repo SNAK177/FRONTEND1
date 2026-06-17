@@ -1,0 +1,86 @@
+.admin-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #f4f4f9;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.sidebar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.sidebar nav a {
+  color: white;
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: var(--radius);
+  transition: pointer 0.3s ease;
+}
+
+.sidebar nav a.active,
+.sidebar nav a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* Contenuto admin */
+.admin-content {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* Cards e tabelle */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing);
+  margin-top: var(--spacing);
+}
+
+.grid-cards .card {
+  background: white;
+  padding: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.grid-cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--spacing);
+  background: white;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.product-table th {
+  background: var(--secondary);
+  color: white;
+  padding: 0.8rem;
+}
+
+.product-table td {
+  padding: 0.8rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-table button {
+  margin-right: 0.5rem;
+}
